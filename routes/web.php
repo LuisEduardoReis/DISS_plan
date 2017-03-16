@@ -15,7 +15,7 @@ use DISS_plan\Activity;
 */
 
 Route::get('/', function() {
-    return redirect('/activities');
+    return view('home');
 });
 
 Route::get('/topics', function () {
