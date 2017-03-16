@@ -2,6 +2,7 @@
 
 use DISS_plan\Topic;
 use DISS_plan\Activity;
+use DISS_plan\Save;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,5 +36,13 @@ Route::get('/activities', function () {
     return view('activities', [
         'activities' => $activities,
         'topics' => $topics
+    ]);
+});
+
+Route::get('/saves', function () {
+    $saves = Save::orderBy('created_at', 'desc')->get();
+
+    return view('saves', [
+        'saves' => $saves,
     ]);
 });

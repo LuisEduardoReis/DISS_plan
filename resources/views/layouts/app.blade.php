@@ -31,6 +31,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="{{'/topics'}}">Topics</a></li>
                 <li><a href="{{'/activities'}}">Activities</a></li>
+                <li><a href="{{'/saves'}}">Saves</a></li>
             </ul>
         </div>
     </nav>

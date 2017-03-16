@@ -108,3 +108,8 @@ Route::delete('/topic_activity/{activity_id}/{topic_id}', function($activity_id,
 
     return redirect('/activities');
 });
+
+
+// *** SAVES *** //
+Route::post('/save_create', 'SaveController@create');
+Route::post('/save_restore', 'SaveController@restore');
