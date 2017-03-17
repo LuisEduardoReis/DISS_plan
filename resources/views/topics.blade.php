@@ -131,7 +131,7 @@
                             name: $('#activity-name').val()
                         },
                         dataType: 'json',
-                        complete: function(data) {document.open('text/html','replace').write(data.responseText);}
+                        complete: function(data) {window.location='/activities';}
                      });
                 ">
                     <i class="fa fa-plus"></i> Add Activity
